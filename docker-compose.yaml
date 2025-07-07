@@ -1,7 +1,7 @@
 version: "3.9"
  
 services:
-  db:
+  postgres:
     image: postgres:16-alpine
     container_name: postgres
     restart: always
@@ -21,7 +21,7 @@ services:
     container_name: backend1
     restart: always
     depends_on:
-      - db
+      - postgres
     environment:
       FLASK_APP: "run.py"
       FLASK_DB_TYPE: "postgres"
@@ -38,7 +38,7 @@ services:
     container_name: backend2
     restart: always
     depends_on:
-      - db
+      - postgres
     environment:
       FLASK_APP: "run.py"
       FLASK_DB_TYPE: "postgres"

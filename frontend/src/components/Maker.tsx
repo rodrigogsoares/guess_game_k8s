@@ -15,7 +15,7 @@ const Maker: React.FC = () => {
         const timeoutId = setTimeout(() => controller.abort(), 5000); // Timeout de 5000ms (5 segundos)
 
         try {
-            const backendUrl = process.env.REACT_APP_BACKEND_URL; // Use the environment variable
+            const backendUrl = '/api';
             const response = await fetch(`${backendUrl}/create`, {
                 method: 'POST',
                 headers: {

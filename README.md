@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projeto Guess Game - Ambiente em Docker
 Este projeto contém a infraestrutura completa para subir uma aplicação web com frontend em React, backend em Flask e banco de dados PostgreSQL, com balanceamento de carga e proxy reverso via NGINX.
 
@@ -107,3 +108,7 @@ Para alterar o IP de API do Backend que o Frontend utiliza, ajuste no arquivo Do
 ```bash
 ARG REACT_APP_BACKEND_URL=http://localhost:5000
 ```
+=======
+# guess_game_k8s
+Guess Game K8S
+>>>>>>> b46867b0eee3230508d8ee8053a7bb8f7dfcd757

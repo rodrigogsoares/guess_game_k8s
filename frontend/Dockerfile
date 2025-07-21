@@ -10,7 +10,7 @@ RUN yarn install
 
 COPY . .
 
-ARG REACT_APP_BACKEND_URL=http://backend:5000
+ARG REACT_APP_BACKEND_URL=http://guessgame-backend:5000
 ENV REACT_APP_BACKEND_URL=$REACT_APP_BACKEND_URL
 
 RUN yarn build
